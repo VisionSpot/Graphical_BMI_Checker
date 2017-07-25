@@ -1,5 +1,6 @@
-#[+] ------------------Graphical BMI Checker---------------------[+]
-#this app is only work in python 2.7
+# -----------------------Graphical BMI Checker---------------------
+#developed and designed by vision spot team 
+
 from Tkinter import *
 from PIL import ImageTk, Image
 import tkMessageBox
@@ -44,7 +45,13 @@ def deleteData():
     lab1.configure(text="")
 
 def aboutMe():
-    return tkMessageBox.showinfo("About Us", "BMI Checker ,Version 0.1\nthis app is developed with Tkinter library in Python 2.7.12\nto use the app payattention to enter the height in meter like: 1.80\nand enter the weight in kg like: 65\n\nProgrammer: Fazel Ahmadi,\nEmail: fazelahmadi32@gmail.com,\n")
+    return tkMessageBox.showinfo("About VISION SPOT", '''BMI Checker ,Version 0.1. this app is developed using
+Tkinter library in Python 2.7.12 to use the app payattention!
+to enter the height in meter like: 1.80 and enter the weight in kg like: 65
+
+Programmer: Fazel Ahmadi
+Email: fazelahmadi32@gmail.com
+''')
 
 img = ImageTk.PhotoImage(Image.open("2000px-Bmi_wordmark.svg_Easy-Resize.com.png"))
 imgShow = Label(imageFrame, image = img)
